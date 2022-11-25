@@ -120,7 +120,7 @@ public class playstate1 extends JPanel implements ActionListener{
         this.add(score1);
         this.addKeyListener(new KeyAdapter() {
             public void keyPressed(KeyEvent e){
-                //int get = e.getKeyCode();
+                
                 
                     if(e.getKeyCode() == KeyEvent.VK_LEFT){
                         c.x -= 10;
@@ -154,7 +154,7 @@ public class playstate1 extends JPanel implements ActionListener{
     public  void paintComponent(Graphics g){
         super.paintComponent(g);
         if(times <= 0 ){
-            this.remove(jbtExit);
+            
             this.setLayout(null);
             g.drawImage(over.getImage(), 0,0, 1000, 800, this);
             g.setColor(Color.WHITE);
